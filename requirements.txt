@@ -1,0 +1,11 @@
+txtai[pipeline]
+txtai[database]
+txtai[sqlite]
+pdfplumber
+pydantic
+networkx
+fastapi
+uvicorn
+# optional acceleration/backends:
+# faiss-cpu
+# psycopg[binary]
