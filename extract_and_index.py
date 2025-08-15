@@ -102,6 +102,7 @@ def build_graph_and_maps(pdf: Path) -> Tuple[nx.Graph, DocMap, List[Dict[str, An
     doc_id = make_id("DOC", {"name": pdf.name, "size": pdf.stat().st_size})
     g = nx.DiGraph()
     g.add_node(doc_id, label="Document", docname=pdf.name, path=str(pdf))
+    
 
     # Gather all text to sniff vendor/grand total
     pchunks = list(paragraph_chunks(pdf, doc_id))
