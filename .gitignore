@@ -1,0 +1,35 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# Environments & installs
+.venv/
+env/
+venv/
+**/site-packages/**
+
+# Model/caches
+.hf_cache/
+.huggingface/
+.cache/
+transformers_cache/
+torch_cache/
+.nltk_data/
+.tika/
+
+# Big artifacts
+index/
+data/hashmaps/
+data/graph.json
+data/mapped.json
+*.safetensors
+*.bin
+*.pt
+*.onnx
+*.h5
+*.dylib
+*.so
